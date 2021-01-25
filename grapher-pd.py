@@ -144,7 +144,7 @@ class Setup(object):
         import sys
         global Args
     
-        pr = argparse.ArgumentParser(description='Search the NYT covid data for specific state and county data, then graph the new case arrival rate.')
+        pr = argparse.ArgumentParser(description='Search the NYT covid data for specific state and county data, then graph the new case arrival rate.  If no arguments are passed it will excute interactively and ask which state/counties to plot.')
         
         pr.add_argument('--state-regex', '-s',
                         type=str,
