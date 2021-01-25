@@ -37,7 +37,7 @@ class nyt_covid_graph(object):
             for num, state in enumerate(state_l):
                 print(f'{num:3d} {state}')
 
-            in_str = input('select the number of the state you want to graph or string of state name: ')
+            in_str = input('select the number of the state you want to graph or regex string to match state name: ')
 
             try:
                 state_l = [state_l[int(in_str)]]
@@ -68,7 +68,7 @@ class nyt_covid_graph(object):
                 for num, county in enumerate(county_l):
                     print(f'{num:3d} {county}')
 
-                in_str = input(f'For "{state}" select the number of the county you want to graph or string of county name: ')
+                in_str = input(f'For "{state}" select the number of the county you want to graph or regex string to match the county name: ')
 
                 try:
                     county_l = [county_l[int(in_str)] ]
