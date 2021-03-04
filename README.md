@@ -1,5 +1,7 @@
 # Coronavirus (Covid-19) Data in the United States
 
+**NEW:** As the [us-counties.csv](us-counties.csv) file has grown too large to open in Excel, we're providing a new [us-counties-recent.csv](us-counties-recent.csv) file that contains only the most recent 30 days of data for each county. It is otherwise identical. Both files will continue to be updated.
+
 **Change:** As of Feb. 10, 2021, we are changing how we report data for a few low-population Alaska geographies to better align with how the state reports data. Data for Bristol Bay Borough and Lake and Peninsula Borough are combined in a new area called "Bristol Bay plus Lake and Peninsula", and data for Yakutat City and Borough and Hoonah-Angoon Census Area are combined as "Yakutat plus Hoonah-Angoon". Many cases now assigned to those new geographies were previously reported as Unknown. The entire timeseries will be revised to use these new geographies.
 
 **NEW:** We are publishing the data behind our [survey of mask usage](https://www.nytimes.com/interactive/2020/07/17/upshot/coronavirus-face-mask-map.html) in the United States in order to provide researchers a way to understand the role of mask wearing in the course of the pandemic. See the data and documentation in the [mask-use/](mask-use/) directory.
@@ -71,6 +73,8 @@ date,county,state,fips,cases,deaths
 ```
 
 In some cases, the geographies where cases are reported do not map to standard county boundaries. See the list of [geographic exceptions](#geographic-exceptions) for more detail on these.
+
+A smaller file with only the most recent 30 days of data is also available in the [us-counties-recent.csv](us-counties-recent.csv) file.  ([Raw CSV file here.](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties-recent.csv))
 
 ---
 
@@ -204,6 +208,10 @@ Counts for Guam include cases reported from the USS Theodore Roosevelt.
 * Puerto Rico
 
 Data for Puerto Rico's county-equivalent municipios are available starting on May 5. This data was not available at the beginning of the outbreak and so all cases and deaths were assigned to Unknown. Puerto Rico does not report deaths at the municipio level.
+
+* Iowa
+
+On Feb. 20, Iowa stopped reporting cases by county. The state now only reports the total number of positive tests in each county, a figure known to be higher than the number of individual cases, as some people who are infected receive multiple positive test results. Iowa still reports deaths at the county level, along with a statewide number of cases, which represent unique individuals known to have tested positive. All new cases since then have been added under Unknown for Iowa.
 
 #### Probable Cases and Deaths and Anomalies
 
