@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: sequence
+# key: sequence
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 'nil))
+# --
+// class: ${1:<CLASSNAME>}
+${2:virtual }class $1${3: extends ${4:<SUPERCLASS>}};
+   \`uvm_object_utils_begin(`(replace-regexp-in-string "_.*" "" (file-name-nondirectory (buffer-file-name)))`_pkg::$1)
+   \`uvm_object_utils_end
+
+   \`uvm_declare_p_sequencer(`(replace-regexp-in-string "_.*" "" (file-name-nondirectory (buffer-file-name)))`_pkg::$5)
+
+   //----------------------------------------------------------------------------------------
+   // Group: Methods
+
+   function new(string name="$1");
+      super.new(name);
+   endfunction : new
+
+   ////////////////////////////////////////////
+   // func: body
+   virtual task body();
+      $0
+   endtask : body
+
+endclass : $1

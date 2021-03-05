@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: phase
+# key: phase
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 'nil))
+# --
+// func: ${1:<PHASE>}_phase
+virtual ${2:function} ${3:void} $1_phase(uvm_phase phase);
+   super.$1_phase(phase);
+   $0
+end$2: $1_phase

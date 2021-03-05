@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: enum
+# key: enum
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+typedef enum {
+              $0
+             } $1_e;

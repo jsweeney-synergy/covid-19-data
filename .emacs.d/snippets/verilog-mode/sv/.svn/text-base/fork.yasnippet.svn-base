@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: fork
+# key: fork
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 'nil))
+# --
+fork
+   $0
+join$1

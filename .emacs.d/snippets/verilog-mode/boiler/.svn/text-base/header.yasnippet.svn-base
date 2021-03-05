@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# expand-env: ((yas/indent-line 'nil) (yas/wrap-around-region 'nil))
+# --
+//-*- mode: Verilog; verilog-indent-level: 3; indent-tabs-mode: nil; tab-width: 1 -*-
+// vim: tabstop=3 expandtab shiftwidth=3 softtabstop=3
+
+// **********************************************************************
+// * CAVIUM CONFIDENTIAL AND PROPRIETARY NOTE
+// *
+// * This software contains information confidential and proprietary to
+// * Cavium, Inc. It shall not be reproduced in whole or in part, or
+// * transferred to other documents, or disclosed to third parties, or
+// * used for any purpose other than that for which it was obtained,
+// * without the prior written consent of Cavium, Inc.
+// * Copyright `(format-time-string "%Y" (current-time))`-`(format-time-string "%Y" (current-time))`, Cavium, Inc.  All rights reserved.
+// ***********************************************************************
+// File:   `(file-name-nondirectory (buffer-file-name))`
+// Author: `(user-login-name)`
+/* About:  $1
+ *************************************************************************/
+
+\`ifndef __`(replace-regexp-in-string "[^a-zA-Z0-9_]" "_" (upcase (file-name-nondirectory (buffer-file-name))))`__
+\`define __`(replace-regexp-in-string "[^a-zA-Z0-9_]" "_" (upcase (file-name-nondirectory (buffer-file-name))))`__
+
+$0
+
+\`endif // guard

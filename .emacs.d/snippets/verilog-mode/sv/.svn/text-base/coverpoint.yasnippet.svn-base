@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: coverpoint
+# key: cp
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+coverpoint $1;
+  {
+   bins $2 = {$3};$0
+   illegal_bins $1_illegal = default;
+}

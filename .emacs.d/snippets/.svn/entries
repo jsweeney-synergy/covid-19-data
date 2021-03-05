@@ -1,0 +1,40 @@
+10
+
+dir
+331289
+svn+ssh://masvn/svn/common/trunk/emacs-site-lisp/snippets
+svn+ssh://masvn/svn
+
+
+
+2015-03-19T13:15:54.743704Z
+272248
+wstucker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+00a0b709-c723-0410-b358-cf7ccaa37a69
+
+python-mode
+dir
+
+mediawiki-mode
+dir
+
+verilog-mode
+dir
+
+csr3-mode
+dir
+

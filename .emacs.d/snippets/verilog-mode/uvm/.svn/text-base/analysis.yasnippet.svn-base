@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tlm analysis port/imp
+# key: anal
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+// field: $3_$1
+// $0
+uvm_analysis_${1:port} #(${2:<type>}) ${3:<name>}_$1;

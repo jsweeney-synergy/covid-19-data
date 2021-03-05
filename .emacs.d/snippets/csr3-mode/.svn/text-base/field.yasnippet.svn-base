@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: field
+# key: field
+# expand-env: ((yas/indent-line nil) (yas/wrap-around-region 'nil))
+# --
+      - name: $1
+        bits: $2${3:..$4}
+        access: $5
+        reset: $6
+        typical: $7
+        description: |
+          $8
+
+$0

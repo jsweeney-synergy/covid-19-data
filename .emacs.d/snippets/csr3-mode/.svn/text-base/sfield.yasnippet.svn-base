@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: sfield
+# key: sfield
+# expand-env: ((yas/indent-line nil) (yas/wrap-around-region 'nil))
+# --
+      - name: $1
+        bits: $2${3:..$4}
+        description: |
+          $8
+
+$0

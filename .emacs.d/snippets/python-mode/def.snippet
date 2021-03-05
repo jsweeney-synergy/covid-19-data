@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: def
+# key: def
+# expand-env: ((yas/indent-line 'nil) (yas/wrap-around-region 'nil))
+# --
+    def ${1:myfunction}(${2:self, }${3:*args, }${4:**kwargs}):
+        """$0
+        """
+        raise NotImplementedError

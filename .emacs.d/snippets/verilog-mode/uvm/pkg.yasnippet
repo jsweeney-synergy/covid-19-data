@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: pkg
+# key: pkg
+# expand-env: ((yas/indent-line 'nil) (yas/wrap-around-region 'nil))
+# --
+
+// package: ${1:<PREFIX>}_pkg
+package $1_pkg;
+
+   //----------------------------------------------------------------------------------------
+   // Group: Imports
+   import uvm_pkg::*;
+
+   //----------------------------------------------------------------------------------------
+   // Group: Imp Declarations
+   // `uvm_analysis_imp_decl(<name>)
+   
+   //----------------------------------------------------------------------------------------
+   // Group: Includes
+   $0
+
+endpackage : $1_pkg

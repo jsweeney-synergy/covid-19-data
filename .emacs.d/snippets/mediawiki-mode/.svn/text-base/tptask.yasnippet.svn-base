@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tptask
+# key: task
+# expand-env: ((yas/indent-line nil) (yas/wrap-around-region 'nil))
+# --
+{{TPTask| name=$1 | remain=$2 | planned=$3 | priority=$4 | owner=${5:`(user-login-name)`}}}

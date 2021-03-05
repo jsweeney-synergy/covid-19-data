@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: new an object
+# key: new
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+${1:obj} = new("$1"${3:, this});$0

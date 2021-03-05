@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: UVM new function
+# key: new
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 'nil))
+# --
+// func: new
+function new(string name="$1", uvm_component parent=null);
+   super.new(name, parent);
+endfunction : new         
+

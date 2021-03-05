@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: header guard
+# key: guard
+# expand-env: ((yas/indent-line 'nil) (yas/wrap-around-region 't))
+# --
+// File:       `(file-name-nondirectory (buffer-file-name))`
+// Maintainer: `(user-login-name)`
+
+\`ifndef ${1:__`(replace-regexp-in-string "[^a-zA-Z0-9_]" "_" (upcase (file-name-nondirectory (buffer-file-name))))`__}
+\`define $1
+
+$0
+
+\`endif // guard

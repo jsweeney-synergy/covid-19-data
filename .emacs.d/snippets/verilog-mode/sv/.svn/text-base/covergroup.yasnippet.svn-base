@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: covergroup
+# key: cg
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+// prop: $1cg
+// $2
+covergroup $1cg;
+   $0
+endgroup // $1cg

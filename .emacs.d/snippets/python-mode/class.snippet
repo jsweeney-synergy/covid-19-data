@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: class
+# key: class
+# expand-env: ((yas/indent-line 'nil) (yas/wrap-around-region 'nil))
+# --
+class ${1:MyClass}(${2:object}):
+    """$0
+    """
+    def __init__(self, *args, **kwargs):
+        super(self, $1).__init__(*args, **kwargs)

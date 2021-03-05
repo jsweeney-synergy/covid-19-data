@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: struct
+# key: struct
+# expand-env: ((yas/indent-line nil) (yas/wrap-around-region 'nil))
+# --
+  - name: $1
+    title: $2
+    description: $5
+    fields:
+      $0

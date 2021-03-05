@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: info
+# key: info
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 'nil))
+# --
+\`cn_info(("$1"$0))

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: var
+# key: var
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+// var: $1
+// $2
+${3:rand }${4:<TYPE>} $1$0;
+

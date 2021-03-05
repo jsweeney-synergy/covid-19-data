@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tlm analysis imp write function
+# key: tlm_write
+# expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
+# --
+// func: write_${1:<imp_suffix>}
+// Write function for uvm_analysis_imp_$1.
+virtual function void write_$1(${2:<arg_type>} _${arg});
+   $0
+endfunction : write_$1
